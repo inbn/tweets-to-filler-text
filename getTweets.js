@@ -32,10 +32,14 @@ T.get(
             ...(maxId ? { max_id: maxId } : {}),
           },
           (err, data, response) => {
-            remainingTweets = remainingTweets - data.length;
-            maxId = data[data.length - 1].id;
-            tweets = [...tweets, ...data.map(({ full_text }) => full_text)];
-            getTweets();
+            if (data.length > 0) {
+              remainingTweets = remainingTweets - data.length;
+              maxId = data[data.length - 1].id;
+              tweets = [...tweets, ...data.map(({ full_text }) => full_text)];
+            } else {
+              remainingTweets = 0
+            }
+            getTweets()
           }
         );
       } else {

@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "get-tweets": "node getTweets.js",
+    "generate-text": "node generateText.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "dotenv": "^8.2.0",
     "twit": "^2.2.11"
+  },
+  "dependencies": {
+    "markov-strings": "^2.1.1"
   }
 }
