@@ -1,4 +1,4 @@
-## tweets-to-filler-text
+# tweets-to-filler-text
 
 Generate personalised filler text from your tweets.
 
@@ -12,5 +12,6 @@ Generate personalised filler text from your tweets.
 
 ## Generating text
 
-1. Run `npm run get-tweets`. This should generate a file, `tweets.json` containing tweets.
-1. Run `npm run generate-text`. A paragraph of filler text should now appear in the console.
+1. Run `npm run get-tweets`. This should generate a file, `_data/tweets.json` containing tweets.
+1. Run `npm run build-corpus`. This should generate a file, `_data/corpus.json` containing the corpus used for generating text.
+1. Run `npm run generate-text`. A paragraph of text should now appear in the console.

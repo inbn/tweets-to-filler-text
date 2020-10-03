@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "get-tweets": "node getTweets.js",
-    "generate-text": "node generateText.js"
+    "get-tweets": "node scripts/getTweets.js",
+    "build-corpus": "node scripts/buildCorpus.js",
+    "generate-text": "node scripts/generateText.js"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +16,6 @@
     "twit": "^2.2.11"
   },
   "dependencies": {
-    "markov-strings": "^2.1.1"
+    "markov-strings": "^3.0.1"
   }
 }

@@ -43,7 +43,7 @@ T.get(
           }
         );
       } else {
-        fs.writeFileSync('tweets.json', JSON.stringify(tweets));
+        fs.writeFileSync('_data/tweets.json', JSON.stringify(tweets));
       }
     })();
   }
